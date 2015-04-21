@@ -13,3 +13,4 @@ Run ```node index``` and browse to ```localhost:4000```
 Todo :
   * create a **directive** for displaying message from server
   * refresh the data in service when adding a new task
+  * better UI
