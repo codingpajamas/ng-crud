@@ -1,0 +1,18 @@
+html
+	head
+		title
+			| NG-CRUD
+		link(rel="stylesheet", href="/css/bootstrap.min.css")
+		script(src="/javascripts/angular.js")
+		script(src="/javascripts/angular-route.js")
+		script(src="/javascripts/angular-resource.js")
+		script(src="/javascripts/app.js")
+	body(ng-app="taskApp")
+		.container
+			.row
+				.col-md-6.col-md-push-3
+					div(ng-controller="addCtrl")
+						br
+						form(ng-submit="submitTask()")
+							input.form-control.input-xs(ng-model="taskName", placeholder="Type task and press enter")
+					div(ng-view)
